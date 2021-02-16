@@ -13,14 +13,14 @@ const searcher = new YTSearcher({
 });
 
 const dbURI = `mongodb+srv://paddy:${process.env.DB_PASSWORD}@cluster0.dhehs.mongodb.net/padstahBot?retryWrites=true&w=majority`;
-mongoose
-   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-   .then((res) => {
-      console.log('db connected');
-   })
-   .catch((err) => {
-      console.error(err);
-   });
+// mongoose
+//    .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+//    .then((res) => {
+//       console.log('db connected');
+//    })
+//    .catch((err) => {
+//       console.error(err);
+//    });
 
 const queue = new Map();
 let playlists = JSON.parse(fs.readFileSync('playlist.json'));
