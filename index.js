@@ -4,7 +4,7 @@ const fs = require('fs');
 const ytdl = require('ytdl-core');
 require('dotenv').config();
 const { YTSearcher } = require('ytsearcher');
-const mongoose = require('mongoose');
+// const mongoose = require('mongoose');
 
 const client = new Discord.Client();
 const searcher = new YTSearcher({
@@ -12,7 +12,7 @@ const searcher = new YTSearcher({
    revealed: true,
 });
 
-const dbURI = `mongodb+srv://paddy:${process.env.DB_PASSWORD}@cluster0.dhehs.mongodb.net/padstahBot?retryWrites=true&w=majority`;
+// const dbURI = `mongodb+srv://paddy:${process.env.DB_PASSWORD}@cluster0.dhehs.mongodb.net/padstahBot?retryWrites=true&w=majority`;
 // mongoose
 //    .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 //    .then((res) => {
