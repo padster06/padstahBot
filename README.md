@@ -1,2 +1,2 @@
 # padstahBot
-a bot that I create
+A music bot with playlist feature.
